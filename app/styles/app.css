@@ -125,6 +125,8 @@ body:after {
     float: left;
     padding-left: 1%;
     padding-right: 1%; }
+  .main .section.cta, .main .section.cta2 {
+    background: red; }
   .main .section.cta {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -133,8 +135,6 @@ body:after {
     float: left;
     padding-left: 1%;
     padding-right: 1%;
-    margin: 0.84034% auto 0;
-    background: red;
     margin-left: 13.26531%; }
   .main .section.cta .item1 {
     -moz-box-sizing: border-box;
@@ -167,7 +167,60 @@ body:after {
     width: 38.46154%;
     float: left;
     padding-left: 0.76923%;
-    padding-right: 0.76923%; } }
+    padding-right: 0.76923%; }
+  .main .section.cta2 {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 80%;
+    float: left;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 8.16327%; }
+  .main .section.cta2 .item1 {
+    clear: both;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 23.52941%;
+    float: left;
+    margin-left: 70.58824%;
+    margin-right: -100%;
+    padding-left: 0.58824%;
+    padding-right: 0.58824%; }
+  .main .section.cta2 .item2 {
+    clear: both;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 52.94118%;
+    float: left;
+    margin-left: 23.52941%;
+    margin-right: -100%;
+    padding-left: 0.58824%;
+    padding-right: 0.58824%; }
+  .main .section.cta2 .item3 {
+    clear: both;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 61.53846%;
+    float: left;
+    margin-left: 7.69231%;
+    margin-right: -100%;
+    padding-left: 0.76923%;
+    padding-right: 0.76923%; }
+  .main .section.cta2 .item4 {
+    clear: both;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 25%;
+    float: left;
+    margin-left: 37.5%;
+    margin-right: -100%;
+    padding-left: 1.25%;
+    padding-right: 1.25%; } }
 
 .sidebar {
   margin-top: 1.69492%;

@@ -113,10 +113,11 @@ body {
 
 		@include susy-breakpoint($bp-large, $susy) {
 			@include span(5 of 10 inside);
+			&.cta, &.cta2 {
+				background: red;
+			}
 			&.cta {
 				@include span(7 of 10 inside);
-  				margin: gutter(24) auto 0;
-				background: red;
 				margin-left: span(1.5 of 10);
 				.item1 {
 					@include span(4 of 9 inside);
@@ -129,6 +130,22 @@ body {
 				}
 				.item4 {
 					@include span(5 of 13 inside);
+				}
+			}
+			&.cta2 {
+				@include span(8 of 10 inside);
+				margin-left: span(1 of 10);
+				.item1 {
+					@include span(isolate 4 of 17 at 13 inside break);
+				}
+				.item2 {
+					@include span(isolate 9 of 17 at 5 inside break);
+				}
+				.item3 {
+					@include span(isolate 8 of 13 at 2 inside break);
+				}
+				.item4 {
+					@include span(isolate 2 of 8 at 4 inside break);
 				}
 			}
 		}
