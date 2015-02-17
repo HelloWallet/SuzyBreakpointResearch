@@ -1,2 +1,278 @@
+@import url(normalize.css/normalize.css);
+* {
+  box-sizing: border-box; }
+
+/* VARIBLES */
+/* -------- */
+.clearfix, .wrapper, .wrapper-half {
+  overflow: auto;
+  zoom: 1; }
+
+p {
+  line-height: 1.5em; }
+
+body {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: gainsboro;
+  padding: 1.69492%; }
+body:after {
+  content: " ";
+  display: block;
+  clear: both; }
+
+.nav {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+  position: relative;
+  margin: 1em 0; }
+.nav:before {
+  content: "\2630";
+  font-size: 2em;
+  cursor: pointer; }
+.nav:hover .nav-inner {
+  position: absolute;
+  top: 1em;
+  padding: 1em;
+  border-radius: 3px;
+  border: 1px solid gray;
+  background: whitesmoke;
+  display: block; }
+.nav .nav-inner {
+  display: none; }
+@media (min-width: 680px) {
+  .nav {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+  .nav:before {
+    content: ""; }
+  .nav:hover .nav-inner {
+    position: relative;
+    top: 0;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    background: transparent;
+    display: block; }
+  .nav .nav-inner {
+    display: block; }
+  .nav li {
+    display: inline-block; } }
+
+.main2 {
+  width: 100%; }
+
 .main {
-  body: #000099; }
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  background: gray; }
+@media (min-width: 680px) {
+  .main {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 83.05085%;
+    float: left;
+    margin-right: 1.69492%; } }
+.main .section {
+  text-align: center;
+  background: lightblue;
+  margin: 0.84034% 0 0;
+  border: 1px solid black;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%; }
+.main .section .item {
+  background: aliceblue;
+  border: 1px dashed gray;
+  padding: 1em 0; }
+@media (min-width: 680px) {
+  .main .section {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 1%;
+    padding-right: 1%; } }
+@media (min-width: 1200px) {
+  .main .section {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 1%;
+    padding-right: 1%; }
+  .main .section.cta {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 70%;
+    float: left;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin: 0.84034% auto 0;
+    background: red;
+    margin-left: 13.26531%; }
+  .main .section.cta .item1 {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 44.44444%;
+    float: left;
+    padding-left: 1.11111%;
+    padding-right: 1.11111%; }
+  .main .section.cta .item2 {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 1.11111%;
+    padding-right: 1.11111%; }
+  .main .section.cta .item3 {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 53.84615%;
+    float: left;
+    padding-left: 0.76923%;
+    padding-right: 0.76923%; }
+  .main .section.cta .item4 {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 38.46154%;
+    float: left;
+    padding-left: 0.76923%;
+    padding-right: 0.76923%; } }
+
+.sidebar {
+  margin-top: 1.69492%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  padding: 1em;
+  background: steelblue; }
+@media (min-width: 680px) {
+  .sidebar {
+    margin-top: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 15.25424%;
+    float: right;
+    margin-right: 0; } }
+
+.footer {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: right;
+  margin-right: 0; }
+
+.footer ul, .nav ul {
+  margin: 1em 0;
+  padding: 0; }
+.footer li, .nav li {
+  padding: 0 1em 0 0;
+  list-style-type: none; }
+
+/*------------------------*/
+.wrapper, .wrapper-half {
+  background: whitesmoke;
+  padding: 1em; }
+
+.wrapper {
+  width: 100%; }
+.wrapper .component .primary {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%; }
+.wrapper .component .secondary {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%; }
+.wrapper .component .tertiary {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 32.20339%;
+  float: right;
+  margin-right: 0; }
+
+.wrapper-half {
+  width: 50%; }
+.wrapper-half .component .primary {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%; }
+.wrapper-half .component .secondary {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 49.15254%;
+  float: right;
+  margin-right: 0; }
+.wrapper-half .component .tertiary {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  margin-top: 1.69492%; }
+
+.component div {
+  padding: 1em;
+  border: 1px dotted black; }
+
+/* FAUX BOOTSTRAP */
+.col-xs-12 {
+  float: left;
+  padding-right: 15px;
+  width: 100%; }
+
+.col-xs-6 {
+  float: left;
+  width: 48%;
+  margin-right: 1%; }
+
+.col-sm-4 {
+  float: left;
+  width: 32.3333%; }

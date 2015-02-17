@@ -1,5 +1,231 @@
-$blue: #000099;
+@import "susy";
+@import "normalize.css/normalize.css";
+
+* {
+	box-sizing: border-box;
+}
+/* VARIBLES */
+$susy: (
+  columns: 12,
+  gutter-position: after,
+  math: fluid,
+  output: float,
+  box-sizing: border-box
+);
+$bp-medium: 680px;
+$bp-large: 1200px;
+/* -------- */
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+p {
+	line-height: 1.5em;
+}
+
+body {
+	@include container(12 no-gutters);
+	background: gainsboro;
+	padding: gutter(12);
+}
+
+.nav {
+	@include span(6);
+	position: relative;
+	margin: 1em 0;
+	&:before {
+		content: "\2630";
+		font-size: 2em;
+		cursor: pointer;
+	}
+	&:hover {
+		.nav-inner {
+			position: absolute;
+			top: 1em;
+			padding: 1em;
+			border-radius: 3px;
+			border: 1px solid gray;
+			background: whitesmoke;
+			display: block;
+		}
+	}
+	.nav-inner {
+		display: none;
+	}
+
+	@include susy-breakpoint($bp-medium, $susy) {
+		@include span(12);
+		&:before {
+			content: ""
+		}
+		&:hover {
+			.nav-inner {
+				position: relative;
+				top: 0;
+				padding: 0;
+				border-radius: 0;
+				border: none;
+				background: transparent;
+				display: block;
+			}
+		}
+		.nav-inner {
+			display: block;
+		}
+		li {
+			display: inline-block;
+		}
+	}
+
+}
+
+.main2 {
+	width: 100%;
+}
 
 .main {
-	body: $blue;
+	@include span(12 last);
+
+	@include susy-breakpoint($bp-medium, $susy) {
+		@include span(10);
+	}
+
+	background: gray;
+
+	.section {
+		text-align: center;
+		background: lightblue;
+		margin: gutter(24) 0 0;
+		border: 1px solid black;
+		@include span(12 inside);
+
+		.item {
+			background: aliceblue;
+			border: 1px dashed gray;
+			padding: 1em 0;
+		}
+
+		@include susy-breakpoint($bp-medium, $susy) {
+			@include span(5 of 10 inside);
+		}
+
+		@include susy-breakpoint($bp-large, $susy) {
+			@include span(5 of 10 inside);
+			&.cta {
+				@include span(7 of 10 inside);
+  				margin: gutter(24) auto 0;
+				background: red;
+				margin-left: span(1.5 of 10);
+				.item1 {
+					@include span(4 of 9 inside);
+				}
+				.item2 {
+					@include span(9 of 9 inside);
+				}
+				.item3 {
+					@include span(7 of 13 inside);
+				}
+				.item4 {
+					@include span(5 of 13 inside);
+				}
+			}
+		}
+	}
+}
+
+.sidebar {
+	margin-top: gutter();
+	@include span(12 last);
+
+	@include susy-breakpoint($bp-medium, $susy) {
+	margin-top: 0;
+		@include span(2 last);
+	}
+
+	padding: 1em;
+	background: steelblue;
+
+}
+
+.footer {
+	@include span(12 last);
+}
+
+.footer, .nav {
+	ul {
+		margin: 1em 0;
+		padding: 0;
+	}
+	li {
+		padding: 0 1em 0 0;
+		list-style-type: none;
+	}
+}
+
+
+
+
+/*------------------------*/
+
+.wrapper,.wrapper-half {
+	@extend .clearfix;
+	background: whitesmoke;
+	padding: 1em;
+}
+
+.wrapper {
+	width: 100%;
+	.component {
+		.primary {
+			@include span(4 first);
+		}
+		.secondary {
+			@include span(4);
+		}
+		.tertiary {
+			@include span(4 last);
+		}
+	}
+}
+
+.wrapper-half {
+	width: 50%;
+	.component {
+		.primary {
+			@include span(6 first);
+		}
+		.secondary {
+			@include span(6 last);
+		}
+		.tertiary {
+			@include span(12 last);
+			margin-top: gutter();
+		}
+	}
+}
+
+.component {
+	div {
+		padding: 1em;
+		border: 1px dotted black;
+	}
+}
+
+/* FAUX BOOTSTRAP */
+
+.col-xs-12 {
+	float: left;
+	padding-right: 15px;
+	width: 100%;
+}
+.col-xs-6 {
+	float: left;
+	width: 48%;
+	margin-right: 1%;
+}
+.col-sm-4 {
+	float: left;
+	width: 32.3333%
 }

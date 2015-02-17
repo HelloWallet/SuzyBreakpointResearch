@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Suzy Research</title>
+	<link rel="stylesheet" type="text/css" href="styles/app.css">
+</head>
+
+<body>
+	<div class="main2">
+		<h1>Using Components</h1>
+		<p>Sometimes it's not easy to change markup based classes based upon the container that contains the component.</p>
+		<p>You can bind classes to those components based on the container, but that involves javascript to handle styling. You can override classes as well, but that changes the meaning of clasess like `col-xs-4` to something else!</p>
+
+		<p>Better to just use css and handle grids from css.</p>
+		<h2>Markup Based Grids:</h2>
+		<h3>Full Width Container</h3>
+		<section class="wrapper">
+		<!-- Nothing here is dynamic unless you want to programmatically change class names in javascript -->
+			<div class="component">
+				<div class="col-xs-6 col-sm-4">
+					Primary Item
+				</div>
+				<div class="col-xs-6 col-sm-4">
+					Secondary Item
+				</div>
+				<div class="col-xs-12 col-sm-4">
+					Tertiary Item
+				</div>
+			</div>
+		<!-- end -->
+		</section>
+
+		<h3>Half Width Container</h3>
+		<section class="wrapper-half">
+		<!-- Nothing here is dynamic unless you want to programmatically change class names in javascript -->
+			<div class="component">
+				<div class="col-xs-6 col-sm-4">
+					Primary Item
+				</div>
+				<div class="col-xs-6 col-sm-4">
+					Secondary Item
+				</div>
+				<div class="col-xs-12 col-sm-4">
+					Tertiary Item
+				</div>
+			</div>
+		<!-- end -->
+		</section>
+		<br>
+		<hr>
+		<h1>StyleSheet Based Grids:</h1>
+		<h3>Full Width Container</h3>
+		<section class="wrapper">
+		<!-- Nothing here is dynamic unless you want to programmatically change class names in javascript -->
+			<div class="component">
+				<div class="primary">
+					Primary Item
+				</div>
+				<div class="secondary">
+					Secondary Item
+				</div>
+				<div class="tertiary">
+					Tertiary Item
+				</div>
+			</div>
+		<!-- end -->
+		</section>
+
+		<h3>Half Width Container</h3>
+		<section class="wrapper-half">
+		<!-- Nothing here is dynamic unless you want to programmatically change class names in javascript -->
+			<div class="component">
+				<div class="primary">
+					Primary Item
+				</div>
+				<div class="secondary">
+					Secondary Item
+				</div>
+				<div class="tertiary">
+					Tertiary Item
+				</div>
+			</div>
+		<!-- end -->
+		</section>
+
+	</div>
+
+</body>
+
+</html>

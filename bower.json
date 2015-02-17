@@ -1,0 +1,11 @@
+{
+  "name": "SusyResearch",
+  "version": "0.0.1",
+  "authors": [
+    ""
+  ],
+  "license": "GNU GPL",
+  "dependencies": {
+    "normalize.css": "~3.0.2"
+  }
+}
